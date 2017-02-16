@@ -18,10 +18,11 @@
   
  4.Edit the script and change the values of the following variables
  according with your Slack account credentials:
- 
+
+```python
     email = "USER@gmail.com"
     pwd = "PASS"
     url = "https://TEAM.slack.com/files"
     url_myfiles = "https://TEAM.slack.com/files/USER"
-    
+```
  
