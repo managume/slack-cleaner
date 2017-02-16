@@ -19,12 +19,9 @@
  4.Edit the script and change the values of the following variables
  according with your Slack account credentials:
  
- #INSERT CREDENTIALS
     email = "USER@gmail.com"
     pwd = "PASS"
- #INSERT URL FILES
     url = "https://TEAM.slack.com/files"
- #INSERT URL MY FILES
     url_myfiles = "https://TEAM.slack.com/files/USER"
     
  
