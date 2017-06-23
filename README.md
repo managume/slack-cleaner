@@ -20,9 +20,9 @@
  according with your Slack account credentials:
 
 ```python
-    email = "USER@gmail.com"
-    pwd = "PASS"
-    url = "https://TEAM.slack.com/files"
-    url_myfiles = "https://TEAM.slack.com/files/USER"
+    email = "Insert your email account"
+    usr = "Insert your username"
+    pwd = "Insert your password"
+    team = "Insert the name of your team"
 ```
  
