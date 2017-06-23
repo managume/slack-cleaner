@@ -7,13 +7,14 @@ from time import sleep
 
 
 #INSERT CREDENTIALS
-email = "USER@gmail.com"
-usr = "USER"
-pwd = "PASS"
+email = "Insert your email account"
+usr = "Insert your username"
+pwd = "Insert your password"
+team = "Insert the name of your team"
 #INSERT URL FILES
-url = "https://TEAM.slack.com/files"
+url = "https://" + team + ".slack.com/files"
 #INSERT URL MY FILES
-url_myfiles = "https://TEAM.slack.com/files/USER"
+url_myfiles = "https://" + team + ".slack.com/files/USER"
 #------------------
 print("Start scraping")
 driver = webdriver.Chrome()
@@ -60,6 +61,12 @@ try:
 		confirm_action.click()
 
 		print("File deleted")
+
+		wait.until(EC.visibility_of_element_located((By.XPATH,'//*[@id="generic_dialog"]/div[3]/button[3]')))
+		confirm_action = driver.find_element_by_xpath('//*[@id="generic_dialog"]/div[3]/button[3]')
+		wait.until(EC.visibility_of_element_located((By.XPATH,'//*[@id="generic_dialog"]/div[3]/button[3]')))
+		confirm_action.click()
+
 		wait.until(EC.presence_of_element_located((By.CSS_SELECTOR,'#files_list div:first-child h4')))
 		driver.get(url_myfiles)
 finally:
